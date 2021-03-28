@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5FBD002610D970009CD134 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FBCFF2610D970009CD134 /* Helper.swift */; };
+		FA5FBD012610D970009CD134 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FBCFF2610D970009CD134 /* Helper.swift */; };
 		FA80817A260EB0E5006BE409 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA808179260EB0E5006BE409 /* Tests_iOS.swift */; };
 		FA808185260EB0E5006BE409 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA808184260EB0E5006BE409 /* Tests_macOS.swift */; };
 		FA808187260EB0E5006BE409 /* AccelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80815E260EB0E1006BE409 /* AccelApp.swift */; };
@@ -15,6 +17,8 @@
 		FA80818A260EB0E5006BE409 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80815F260EB0E1006BE409 /* ContentView.swift */; };
 		FA80818B260EB0E5006BE409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA808160260EB0E4006BE409 /* Assets.xcassets */; };
 		FA80818C260EB0E5006BE409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA808160260EB0E4006BE409 /* Assets.xcassets */; };
+		FA8081A1260EB10F006BE409 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8081A0260EB10F006BE409 /* MotionManager.swift */; };
+		FA8081A2260EB10F006BE409 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8081A0260EB10F006BE409 /* MotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA5FBCFF2610D970009CD134 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		FA80815E260EB0E1006BE409 /* AccelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelApp.swift; sourceTree = "<group>"; };
 		FA80815F260EB0E1006BE409 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA808160260EB0E4006BE409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		FA808180260EB0E5006BE409 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA808184260EB0E5006BE409 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		FA808186260EB0E5006BE409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8081A0260EB10F006BE409 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,8 @@
 			children = (
 				FA80815E260EB0E1006BE409 /* AccelApp.swift */,
 				FA80815F260EB0E1006BE409 /* ContentView.swift */,
+				FA8081A0260EB10F006BE409 /* MotionManager.swift */,
+				FA5FBCFF2610D970009CD134 /* Helper.swift */,
 				FA808160260EB0E4006BE409 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -309,7 +317,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA808189260EB0E5006BE409 /* ContentView.swift in Sources */,
+				FA8081A1260EB10F006BE409 /* MotionManager.swift in Sources */,
 				FA808187260EB0E5006BE409 /* AccelApp.swift in Sources */,
+				FA5FBD002610D970009CD134 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +328,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA80818A260EB0E5006BE409 /* ContentView.swift in Sources */,
+				FA8081A2260EB10F006BE409 /* MotionManager.swift in Sources */,
 				FA808188260EB0E5006BE409 /* AccelApp.swift in Sources */,
+				FA5FBD012610D970009CD134 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

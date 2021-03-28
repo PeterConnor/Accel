@@ -16,12 +16,26 @@ struct ContentView: View {
         // Show accelerometer data if button is pushed. Otherwise, show button.
         
         if motionManager.isAccelerometerActive == true {
-            Text("X:  \(motionManager.accelerometerValues?.last?.x ?? 0.0)")
-                .modifier(ButtonModifier())
-            Text("Y: \(motionManager.accelerometerValues?.last?.y ?? 0.0)")
-                .modifier(ButtonModifier())
-            Text("Z: \(motionManager.accelerometerValues?.last?.z ?? 0.0)")
-                .modifier(ButtonModifier())
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("X:")
+                        .modifier(LabelModifier())
+                    Text("\(motionManager.accelerometerValues?.last?.x ?? 0.0)")
+                        .modifier(ButtonModifier())
+                }
+                HStack {
+                    Text("Y:")
+                        .modifier(LabelModifier())
+                    Text("\(motionManager.accelerometerValues?.last?.y ?? 0.0)")
+                        .modifier(ButtonModifier())
+                }
+                HStack {
+                    Text("Z:")
+                        .modifier(LabelModifier())
+                    Text("\(motionManager.accelerometerValues?.last?.z ?? 0.0)")
+                        .modifier(ButtonModifier())
+                }
+            }
         } else {
             Button(action: {
                 motionManager.startAccelerometer()
@@ -45,6 +59,16 @@ struct ButtonModifier: ViewModifier {
             .padding()
             .background(Color.blue)
             .clipShape(Capsule())
+    }
+}
+
+struct LabelModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(width: 50, height: 50, alignment: .center)
+            .padding()
+            .background(Color.blue)
+            .clipShape(Circle())
     }
 }
 
